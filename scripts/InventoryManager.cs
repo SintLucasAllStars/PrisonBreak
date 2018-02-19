@@ -64,7 +64,16 @@ public class InventoryManager : MonoBehaviour {
 
 		for(int i=0; i<inventory.Count; i++)
 		{
-			Debug.Log("The first item is called: " + inventory[i].name);
+			Debug.Log("The item is called: " + inventory[i].name);
+
+			if(inventory[i] is AccessItem)
+			{
+				Debug.Log("The item is an AccessItem");
+			}
+			if(inventory[i] is BonusItem)
+			{
+				Debug.Log("The item is an BonusItem");
+			}
 		}
 	}
 }
