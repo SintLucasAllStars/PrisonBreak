@@ -58,6 +58,23 @@ public class InventoryManager : MonoBehaviour {
 		return success;
 	}
 
+	public bool CanOpenDoor(int id){
+		for(int i=0; i<inventory.Count; i++)
+		{
+			if(inventory[i] is AccessItem && ((AccessItem)inventory[i]).OpensDoor(id))
+			{
+				return true;
+			}
+		}
+
+		return false;
+	}
+
+	public int Count()
+	{
+		return inventory.Count;
+	}
+
 	public void PrintToConsole()
 	{
 		Debug.Log(inventory.Count + " items on the inventory");

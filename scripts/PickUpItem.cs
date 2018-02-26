@@ -22,7 +22,27 @@ public class PickUpItem : MonoBehaviour, IInteractable {
 		
 	}
 
+	private Item createItem(){
+
+		Item it = null;
+
+		switch(itemType)
+		{
+		case ItemType.accessItem:
+			it = new AccessItem(name, weight, doorId);
+			break;
+		case ItemType.bonusItem:
+			it = new BonusItem(name, weight, bonusPoints);
+			break;
+		}
+
+		return it;
+	}
+
 	public void Interact(){
-		Debug.Log("Interacting with pickup item");
+		if(InventoryManager.instance.AddItem(createItem()))
+		{
+			Destroy(gameObject);
+		}
 	}
 }
