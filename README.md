@@ -22,7 +22,7 @@ Prison break, Get items to escape a building.
 * Do not create a way to open the last door. That's for the next assignment.
 
 ## Module 2  (2 weeks / one week instruction, one week assignment)
-## Data models, working with data. (reiteration of Classes that do not inherit from MonoBehaviour) and Collections
+### Data models, working with data. (reiteration of Classes that do not inherit from MonoBehaviour) and Collections
 
 #### Learning goals:
 Arrays, Lists, Dictionaries, Generic classes
