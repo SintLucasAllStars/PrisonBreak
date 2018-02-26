@@ -6,6 +6,8 @@ using UnityEngine.UI;
 
 public class Joke : MonoBehaviour {
 
+	public Text textObject;
+
 	[Serializable]
 	class JsonJoke
 	{
@@ -49,6 +51,7 @@ public class Joke : MonoBehaviour {
 
 		joke = res.value.joke;
 
+		textObject.text = joke;
 		Debug.Log(joke);
 	}
 	
