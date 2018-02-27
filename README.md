@@ -32,6 +32,8 @@ Using the [SimpleJSON library](http://wiki.unity3d.com/index.php/SimpleJSON) for
 #### Assignment:
 Create a data visualization within the prison. Use the data as a code for a door.
 
-* Create a room on the prison where there is a projector displaying data from:
-  * http://api.icndb.com/jokes/random?limitTo=[nerdy]
-  *  ?? other simple ones without oAuth??
+* Create a room on the prison where there is a projector displaying data from an API for example:
+  * http://api.icndb.com/jokes/random?limitTo=[nerdy] => Chuck Norris Jokes.
+  * [Any API with 500+ public API's of all types] (https://any-api.com/)
+  * [Collective list of public API's for many things](https://github.com/toddmotto/public-apis)
+  * [Awesome comic XKCD API to get all the comics](https://xkcd.com/json.html)
