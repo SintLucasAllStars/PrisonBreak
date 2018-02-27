@@ -27,7 +27,7 @@ Prison break, Get items to escape a building.
 #### Learning goals:
 Arrays, Lists, Dictionaries, Generic classes
 Writing/reading files/data to and from online sources.
-Using the [SimpleJSON library][http://wiki.unity3d.com/index.php/SimpleJSON] for C#.
+Using the [SimpleJSON library](http://wiki.unity3d.com/index.php/SimpleJSON) for C#.
 
 #### Assignment:
 Create a data visualization within the prison. Use the data as a code for a door.
