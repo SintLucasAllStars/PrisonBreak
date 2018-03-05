@@ -30,8 +30,9 @@ Writing/reading files/data to and from online sources.
 Using the [SimpleJSON library](http://wiki.unity3d.com/index.php/SimpleJSON) for C#.
 
 #### Assignment:
-Create a data visualization within the prison. Use the data as a code for a door.
+Create a visualization for external data within the prison. Use the data as a way to open the door.
 
+For example:
 * Create a room on the prison where there is a projector displaying data from an API for example:
   * http://api.icndb.com/jokes/random?limitTo=[nerdy] => Chuck Norris Jokes.
   * [Any API with 500+ public API's of all types] (https://any-api.com/)
