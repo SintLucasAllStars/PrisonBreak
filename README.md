@@ -38,3 +38,16 @@ For example:
   * [Any API with 500+ public API's of all types] (https://any-api.com/)
   * [Collective list of public API's for many things](https://github.com/toddmotto/public-apis)
   * [Awesome comic XKCD API to get all the comics](https://xkcd.com/json.html)
+
+## Module 3  (2 weeks / one week instruction, one week assignment)
+### Generative algorithms. Seed controlled generation. Generating terrains.
+
+#### Learning goals:
+Working with random seeds, generative techniques, working with terrains.
+
+#### Assignment:
+After getting out of jail escape the island. So generate an island.
+* Generate the terrain
+* Create a new inventory item RaftPart
+* Spread RaftParts through the terrain (Randomly/generatively gives extra points but could also be manually).
+* The player needs to collect all the raft parts and build a raft to escape the island.
