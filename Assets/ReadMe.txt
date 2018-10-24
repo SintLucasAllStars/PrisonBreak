@@ -46,3 +46,6 @@ LMB(hold)	- Use item
 -Interact with the ship to escape
 
 The end
+
+
+Made by Lars van Schaik
