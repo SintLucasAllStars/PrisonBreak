@@ -36,6 +36,7 @@ public class Inventory : MonoBehaviour
         else
         {
             items.Add(item);
+            InventoryUI.instance.Add(item);
             totalWeight += item.weight;
             return true;
         }
@@ -45,7 +46,20 @@ public class Inventory : MonoBehaviour
     {
         if (items.Remove(item))
         {
+            InventoryUI.instance.Remove(item);
             totalWeight -= item.weight;
+        }
+    }
+
+    public void removeByName(string name)
+    {
+        foreach (Item i in items)
+        {
+            if (i.name == name)
+            {
+                removeItem(i);
+                break;
+            }
         }
     }
 
