@@ -35,7 +35,7 @@ public class ProceduralBehaviour : MonoBehaviour
     private void Start()
     {
         pt = new ProceduralTerrain(worldSize, worldSize, passes);
-        t.terrainData.size = new Vector3(worldSize, maxHeight, worldSize);
+        t.terrainData.size = new Vector3(worldSize*2, maxHeight, worldSize*2);
         t.terrainData.heightmapResolution = worldSize;
         Generate();
     }
@@ -60,8 +60,25 @@ public class ProceduralBehaviour : MonoBehaviour
         }
         
         pt.Generate();
+
+        float[,] norm = pt.GetHeightsNormalized();
         
-        t.terrainData.SetHeights(0,0,pt.GetHeightsNormalized());
+        t.terrainData.SetHeights(0,0,norm);
+        Texture2D mask = new Texture2D(worldSize, worldSize);
+        Color[] colors = new Color[worldSize*worldSize];
+
+        for (int x = 0; x < worldSize; x++)
+        {
+            for (int z = 0; z < worldSize; z++)
+            {
+                colors[x + (z*worldSize)] = new Color(norm[x,z], norm[x,z], norm[x,z]);
+            }
+        }
+
+        mask.SetPixels(colors);
+        mask.Apply();
+        
+        t.terrainData.terrainLayers[0].diffuseTexture = mask;
     }
 
     public void setSeed(int s)
