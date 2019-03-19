@@ -51,3 +51,10 @@ After getting out of jail escape the island. So generate an island.
 * Create a new inventory item RaftPart
 * Spread RaftParts through the terrain (Randomly/generatively gives extra points but could also be manually).
 * The player needs to collect all the raft parts and build a raft to escape the island.
+
+## Module 4 (2 weeks assignment)
+
+Polishing and finishing - These two weeks are to go throught the whole project and finish up all the details and make it into a fully playable, finished game.
+
+## Deadline 2019
+The deadline for delivery is the 2nd of April 2019 at 23:59
