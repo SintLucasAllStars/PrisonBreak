@@ -58,7 +58,10 @@ public class ProceduralTerrain
             switch (passes[i].type)
             {
                 case HeightPass.PassType.PerlinBased:
-                    val = Mathf.PerlinNoise(ProceduralBehaviour.instace.perlinSeed + x/passes[i].detail, ProceduralBehaviour.instace.perlinSeed + z/passes[i].detail) * passes[i].height;
+                    float xCoord = ProceduralBehaviour.instace.perlinSeedX + x / (float)ProceduralBehaviour.instace.worldSize * passes[i].detail;
+                    float yCoord = ProceduralBehaviour.instace.perlinSeedY + z / (float)ProceduralBehaviour.instace.worldSize * passes[i].detail;
+                    val = Mathf.PerlinNoise(xCoord, yCoord) * passes[i].height;
+                    //val = Mathf.PerlinNoise(ProceduralBehaviour.instace.perlinSeed + (x/passes[i].detail), ProceduralBehaviour.instace.perlinSeed + (z/passes[i].detail)) * passes[i].height;
                     break;
                 case HeightPass.PassType.RandomBased:
                     val = Random.value * passes[i].height;
