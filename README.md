@@ -56,5 +56,5 @@ After getting out of jail escape the island. So generate an island.
 
 Polishing and finishing - These two weeks are to go throught the whole project and finish up all the details and make it into a fully playable, finished game.
 
-## Deadline 2019
-The deadline for delivery is the 2nd of April 2019 at 23:59
+## Deadline 2020
+The deadline for delivery is the 2nd of April 2020 at 23:59
