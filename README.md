@@ -57,7 +57,7 @@ After getting out of jail escape the island. So generate an island.
 Polishing and finishing - These two weeks are to go throught the whole project and finish up all the details and make it into a fully playable, finished game.
 
 ## Deadline 2021
-TBA
+April 1st 2021 - Presentation and delivery.
 
 ## Delivery
 The delivery of this project consists of only a **github link to your repository**. So make sure Git is working for you from the start and be careful with commiting huge files.
